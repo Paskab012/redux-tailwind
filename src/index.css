@@ -12,12 +12,20 @@
 
 .wrapper{
     overflow-x: hidden;
-    overflow-y: auto;    
+    overflow-y: auto;
+    background-color: rgb(153, 164, 173);
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .wrapper h1{
     margin-top: 30px;
     text-align: center;
+}
+
+h2 {
+    font-size: 1.1rem;
+    color: rgb(20, 53, 95);
 }
 
 .wrapper p{
@@ -36,15 +44,21 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 400px;
+    height: 480px;
     background-color: rgb(237, 242, 250);
     margin: 20px auto;
-    padding: 20px;   
+    padding: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    backdrop-filter: blur(5px);
 }
 
-.wrapper .form-container .btn{
+.btn{
     width: 40%;
-    background-color: rgb(24, 47, 179);
+    background-color: rgb(43, 56, 129);
     color: white;
     font-weight: bold;
     padding: 10px;
@@ -55,11 +69,32 @@
     -o-border-radius:5px ;
 }
 
+.btn-last {
+    width: 40%;
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+    margin: 0 auto;
+}
+
 .side-div{
-    background-color: aqua;
     width: 100% !important;
     display: flex;
-    flex-direction: center;
+    margin: 20px 0 20px 0;
+    background-color: rgb(181, 185, 204);
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 1px 1px 7px 1px white;
 }
 
 .form-group {
@@ -68,10 +103,25 @@
     margin: 0 auto;
 }
 
+.delete-btn {
+    color: tomato;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
 .form-group h3 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 15px;
+    margin-top: 15px;
+    color: rgb(53, 53, 153);
+}
+
+.lastAdded {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
     color: rgb(53, 53, 153);
 }
 
@@ -88,33 +138,40 @@
 .form-group::placeholder{
     color: #d8d8d8;
 }
-
+ 
 .form-group label {
     color: rgb(53, 53, 153);
     font-weight: bold;
     margin-bottom: 5px;
 }
 .wrapper .view-container{
-    width: 40%;    
-    background-color: #e4e4e4;
+    width: 30%;
+    background-color: rgb(237, 242, 250);
     margin: 0 auto;
-    padding: 5px;
+    padding: 2%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-
-.delete-btn{
-    color: red;
-    cursor: pointer;
-}
-
-tbody{
-    margin-top: 25px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .paragraphe {
-    background-color: black;
-    color: white;
+    color: rgb(71, 94, 146);
     font-weight: normal;
+}
+
+.paragraphe h4 {
+    margin-right: 10px;
+    border-right: 2px solid rgb(49, 49, 189);
+    padding-right: 8px;
+}
+
+.addedSubmission {
+    font-weight: bold;
+    color: tomato;
+    font-size: larger;
 }

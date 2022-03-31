@@ -8,13 +8,13 @@ import { trash } from 'react-icons-kit/feather/trash';
 function SideForm({ submissions, deleteSubmission }) {
   return submissions.map((submission) => (
 
-    <div key={submission.category}>
-      <div className="flex justify-between bg-green-400 side-div">
+    <div key={submission.category} className="center">
+      <div className="flex justify-between side-div">
         <div className="submission">
-          <h2>{submission.title}</h2>
-          <div className="flex justify-between bg-red-200 paragraphe">
-            <p>{submission.alias}</p>
-            <p>{submission.category}</p>
+          <h2 className="font-bold">{submission.title}</h2>
+          <div className="flex justify-between paragraphe">
+            <h4 className="font-normal">{submission.alias}</h4>
+            <h4>{submission.category}</h4>
           </div>
         </div>
         <div className="delete-btn" onClick={() => deleteSubmission(submission.category)}>

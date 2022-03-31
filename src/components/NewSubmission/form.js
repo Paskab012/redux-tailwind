@@ -74,6 +74,7 @@ export const Form = () => {
             <label>Alias</label>
             <input
               type="text"
+              maxLength="100"
               className="form-control"
               placeholder="Enter alias"
               required
@@ -84,6 +85,7 @@ export const Form = () => {
             <label>Category</label>
             <input
               type="text"
+              maxLength="100"
               className="form-control"
               placeholder="Enter category"
               required
@@ -100,30 +102,27 @@ export const Form = () => {
         <div className="view-container">
           {submissions.length > 0 && (
             <>
-              <div className="table-responsive">
-                <table className="table">
-                  <thead>
-                    <tr>
-                      <th>Title</th>
-                      <th>Alias</th>
-                      <th>Category</th>
-                      <th>Delete</th>
-                    </tr>
-                  </thead>
-                  <tbody>
+              <div className="respons">
+                <div className="w-1200px">
+                  <div>
+                    <div className="w-1200px">
+                      <h3 className="lastAdded">Recently saved submissions</h3>
+                    </div>
+                  </div>
+                  <div>
                     <SideForm submissions={submissions} deleteSubmission={deleteSubmission} />
-                  </tbody>
-                </table>
+                  </div>
+                </div>
               </div>
               <button
-                className="btn btn-danger btn-md"
+                className="btn btn-last btn-md"
                 onClick={() => setSubmissions([])}
               >
                 Remove All
               </button>
             </>
           )}
-          {submissions.length < 1 && <div>No submissions are added yet</div>}
+          {submissions.length < 1 && <div className="addedSubmission">No submissions added yet...</div>}
         </div>
 
       </div>
