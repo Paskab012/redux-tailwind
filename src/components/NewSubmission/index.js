@@ -2,12 +2,12 @@
 /* eslint-disable import/no-named-as-default-member */
 /* eslint-disable import/no-named-as-default */
 import React from 'react';
-import Form from './form';
+import Items from './Items';
 
 function NewSubmission() {
   return (
     <div>
-      <Form />
+      <Items />
     </div>
   );
 }

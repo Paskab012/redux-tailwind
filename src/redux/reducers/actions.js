@@ -2,8 +2,7 @@
 const ADD_ITEM = 'ADD_ITEM';
 const DELETE_ITEM = 'DELETE_ITEM';
 
-const initialState = [
-];
+const initialState = [];
 
 export const addItem = (payload) => ({
   type: ADD_ITEM,
