@@ -60,35 +60,39 @@ export const Form = () => {
             className="form-group"
             onSubmit={handleAddsubmissionsubmit}
           >
+            <h3>Create New Submission</h3>
             <label>Title</label>
             <input
               type="text"
               className="form-control"
+              placeholder="Enter title"
               required
               onChange={(e) => setTitle(e.target.value)}
               value={title}
             />
             <br />
-            <label>alias</label>
+            <label>Alias</label>
             <input
               type="text"
               className="form-control"
+              placeholder="Enter alias"
               required
               onChange={(e) => setAlias(e.target.value)}
               value={alias}
             />
             <br />
-            <label>category#</label>
+            <label>Category</label>
             <input
               type="text"
               className="form-control"
+              placeholder="Enter category"
               required
               onChange={(e) => setCategory(e.target.value)}
               value={category}
             />
             <br />
             <button type="submit" className="btn btn-success btn-md">
-              ADD
+              Save Submission
             </button>
           </form>
         </div>

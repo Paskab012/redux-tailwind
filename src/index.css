@@ -35,15 +35,24 @@
 .wrapper .form-container{
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 340px;
-    /* background-color: red; */
+    width: 50%;
+    height: 400px;
+    background-color: rgb(237, 242, 250);
     margin: 20px auto;
     padding: 20px;   
 }
 
 .wrapper .form-container .btn{
-    width: 100%;   
+    width: 40%;
+    background-color: rgb(24, 47, 179);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
 }
 
 .side-div{
@@ -51,6 +60,39 @@
     width: 100% !important;
     display: flex;
     flex-direction: center;
+}
+
+.form-group {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form-group h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: rgb(53, 53, 153);
+}
+
+.form-group input {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    outline: none;
+}
+
+.form-group::placeholder{
+    color: #d8d8d8;
+}
+
+.form-group label {
+    color: rgb(53, 53, 153);
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 .wrapper .view-container{
     width: 40%;    
