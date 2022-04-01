@@ -50,8 +50,8 @@ export const Form = () => {
 
   return (
     <div className="wrapper">
-      <h1>submissionList App</h1>
-      <p>Add and view your submissions using local storage</p>
+      <h1>Submission List App</h1>
+      <p>Add and view your submissions </p>
       <div className="main">
 
         <div className="flex bg-red-200 form-container">
